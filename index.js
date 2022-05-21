@@ -50,7 +50,7 @@ let auth = require('./auth')(app);
 
 app.use(morgan('common'));
 
-
+// mongoose.connect('mongodb+srv://mind28:Black-Mamba24@movie-app.xixo1.mongodb.net/myFlixDB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 // mongoose.connect('mongodb+srv://mind28:Black-Mamba24@movie-app.xixo1.mongodb.net/movie-app?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect( process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
